@@ -20,8 +20,10 @@
     "@commitlint/cli": "^18.6.1",
     "@commitlint/config-conventional": "^18.6.1",
     "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/exec": "^7.1.0",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^9.2.6",
+    "@semantic-release/npm": "^13.1.5",
     "@tailwindcss/vite": "^4.2.1",
     "@tsconfig/svelte": "^5.0.8",
     "@wxt-dev/module-svelte": "^2.0.4",
@@ -55,6 +57,18 @@
       ],
       "@semantic-release/release-notes-generator",
       "@semantic-release/changelog",
+      [
+        "@semantic-release/npm",
+        {
+          "npmPublish": false
+        }
+      ],
+      [
+        "@semantic-release/exec",
+        {
+          "prepareCmd": "npm run zip && npm run zip:firefox"
+        }
+      ],
       [
         "@semantic-release/git",
         {
