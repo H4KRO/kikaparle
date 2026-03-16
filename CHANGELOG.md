@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/H4KRO/kikaparle/compare/v1.0.0...v1.0.1) (2026-03-16)
+
+
+### Bug Fixes
+
+* **ci:** remove conventionalcommits preset missing dependency ([295d5ab](https://github.com/H4KRO/kikaparle/commit/295d5ab83fb411e17f83b45403ab70b49988459f))
+
 # 1.0.0 (2026-03-16)
 
 
