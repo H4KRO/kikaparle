@@ -1,0 +1,127 @@
+@forward 'colors';
+@forward 'colors';
+@use 'colors' as *;
+
+// Themes
+@mixin light-theme {
+  @apply bg-slate-50 text-slate-800;
+}
+
+@mixin dark-theme {
+  background-color: $color-dark-bg;
+  color: $color-dark-text;
+}
+
+@mixin dark-panel {
+  background-color: $color-dark-panel;
+  border-color: $color-dark-border;
+}
+
+@mixin dark-muted-text {
+  color: $color-dark-muted;
+}
+
+// Common States
+@mixin button-base {
+  @apply rounded-md border-0 cursor-pointer transition-colors text-sm px-3 py-2;
+}
+
+@mixin button-primary {
+  @include button-base;
+  background-color: $color-info;
+  color: $color-btn-contrast;
+
+  &:hover:not(:disabled) {
+    background-color: $color-info-hover;
+  }
+
+  &:disabled {
+    @apply opacity-40 cursor-not-allowed pointer-events-none;
+  }
+}
+
+@mixin button-danger {
+  @include button-base;
+  background-color: $color-danger;
+  color: $color-btn-contrast;
+
+  &:hover:not(:disabled) {
+    background-color: $color-danger-hover;
+  }
+
+  &:disabled {
+    @apply opacity-40 cursor-not-allowed pointer-events-none;
+  }
+}
+
+@mixin button-warning {
+  @include button-base;
+  background-color: $color-warning;
+  color: $color-btn-contrast;
+
+  &:hover:not(:disabled) {
+    background-color: $color-warning-hover;
+  }
+
+  &:disabled {
+    @apply opacity-40 cursor-not-allowed pointer-events-none;
+  }
+}
+
+@mixin button-teal {
+  @include button-base;
+  background-color: $color-teal;
+  color: $color-btn-contrast;
+
+  &:hover:not(:disabled) {
+    background-color: $color-teal-hover;
+  }
+
+  &:disabled {
+    @apply opacity-40 cursor-not-allowed pointer-events-none;
+  }
+}
+
+// Icon Buttons
+@mixin icon-button($default-border, $default-text, $hover-border, $hover-text) {
+  @apply w-6 h-6 flex items-center justify-center rounded-full border text-xs cursor-pointer transition-colors bg-transparent;
+  border-color: $default-border;
+  color: $default-text;
+
+  &:hover {
+    border-color: $hover-border;
+    color: $hover-text;
+  }
+}
+
+// Absent State
+@mixin absent-light {
+  background-color: $color-absent-bg;
+  border-color: $color-absent-border;
+
+  .popup__participant-name {
+    @apply line-through;
+    color: $color-absent-text;
+  }
+}
+
+@mixin absent-dark {
+  background-color: $color-dark-absent-bg;
+  border-color: $color-dark-absent-border;
+
+  .popup__participant-name {
+    @apply line-through;
+    color: $color-dark-absent-text;
+  }
+}
+
+// Spoken State
+@mixin spoken-state {
+  .popup__participant-name {
+    @apply line-through text-slate-400;
+  }
+
+  .popup__speaker-btn {
+    color: $color-success;
+  }
+}

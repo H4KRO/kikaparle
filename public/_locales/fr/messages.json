@@ -1,0 +1,19 @@
+{
+    "appTitle": { "message": "Kikaparle" },
+    "participantAbsent": { "message": "Absent" },
+    "debugShow": { "message": "Afficher le debug" },
+    "debugHide": { "message": "Masquer le debug" },
+    "teamSelectPlaceholder": { "message": "-- Choisir une équipe --" },
+    "sessionStart": { "message": "Démarrer la session" },
+    "participantAdd": { "message": "Ajouter un participant" },
+    "sessionReset": { "message": "Réinitialiser la session" },
+    "teamSave": { "message": "Sauvegarder comme équipe" },
+    "teamsClear": { "message": "Supprimer les équipes" },
+    "participantHasSpoken": { "message": "A parlé" },
+    "participantHasNotSpoken": { "message": "N'a pas encore parlé" },
+    "teamUpdate": { "message": "Mettre à jour l'équipe" },
+    "teamDelete": { "message": "Supprimer l'équipe" },
+    "themeLight": { "message": "Clair" },
+    "themeDark": { "message": "Sombre" },
+    "themeAuto": { "message": "Auto" }
+}
