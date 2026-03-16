@@ -1,5 +1,4 @@
 #!/bin/bash
-. "$(dirname "$0")/_/husky.sh"
-
-exec < /dev/tty
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 npm exec commitlint -- --edit "$1"
