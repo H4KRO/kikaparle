@@ -1,4 +1,10 @@
 #!/bin/bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+
+# Skip commitlint for automated commits (semantic-release, renovate, etc.)
+if grep -q "\[skip ci\]\|\[skip-ci\]" "$1"; then
+  exit 0
+fi
+
 npm exec commitlint -- --edit "$1"
