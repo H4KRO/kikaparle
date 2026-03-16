@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/H4KRO/kikaparle/compare/v1.0.2...v1.0.3) (2026-03-16)
+
+
+### Bug Fixes
+
+* **ci:** release patch versions for refactor commits ([b8887c8](https://github.com/H4KRO/kikaparle/commit/b8887c8c85a528a64c1a7eed785a3c24a78a94eb))
+
 ## [1.0.2](https://github.com/H4KRO/kikaparle/compare/v1.0.1...v1.0.2) (2026-03-16)
 
 
